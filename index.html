@@ -9,6 +9,79 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <style>
+      .company-history {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .company-logo {
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+      }
+      .history-points {
+        flex: 1;
+      }
+      .history-points p {
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      .market-value {
+        font-weight: bold;
+        color: #3b82f6;
+      }
+      .product-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+        margin: 0 auto;
+        display: block;
+      }
+      .specs-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .spec-group {
+        background: #f8fafc;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+      }
+      .spec-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #1e293b;
+      }
+      .spec-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .spec-list li {
+        margin-bottom: 8px;
+        color: #475569;
+      }
+      .flowchart-container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .flowchart-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      .flowchart-arrow {
+        text-align: center;
+        margin: 10px 0;
+        color: #64748b;
+      }
+    </style>
   </head>
   <body>
     <div class="min-h-screen bg-background">
@@ -49,17 +122,18 @@
                 <div class="card-header">
                   <h2 class="card-title">
                     <i class="fab fa-apple"></i>
-                    Apple: The $2.8 Trillion Tech Giant
+                    Apple: The Tech Giant Behind iPhone
                   </h2>
                 </div>
                 <div class="card-content">
                   <div class="company-history">
                     <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="Apple Logo" class="company-logo">
                     <div class="history-points">
-                      <p><strong>Founded:</strong> 1976 in a garage by Steve Jobs, Steve Wozniak, and Ronald Wayne</p>
-                      <p><strong>First iPhone:</strong> 2007 (changed phones forever)</p>
-                      <p><strong>Today:</strong> Worth $2.8 trillion (richest company in the world)</p>
-                      <p><strong>Fun Fact:</strong> Sells over 200 million iPhones every year</p>
+                      <p><strong>Founded:</strong> April 1, 1976 in Cupertino, California by Steve Jobs, Steve Wozniak, and Ronald Wayne</p>
+                      <p><strong>First iPhone:</strong> Released June 29, 2007 - revolutionized smartphones with touchscreen and apps</p>
+                      <p><strong>Market Value:</strong> <span class="market-value">$2.8 trillion</span> (most valuable company in the world)</p>
+                      <p><strong>iPhone Sales:</strong> Over 230 million iPhones sold annually</p>
+                      <p><strong>Fun Fact:</strong> The original iPhone development cost $150 million and was kept secret even from most Apple employees</p>
                     </div>
                   </div>
                 </div>
@@ -69,17 +143,18 @@
                 <div class="card-header">
                   <h2 class="card-title">
                     <i class="fab fa-samsung"></i>
-                    Samsung: The $370 Billion Korean Powerhouse
+                    Samsung: From Fish Export to Phone Giant
                   </h2>
                 </div>
                 <div class="card-content">
                   <div class="company-history">
                     <img src="https://1000logos.net/wp-content/uploads/2017/06/Font-Samsung-Logo.jpg" alt="Samsung Logo" class="company-logo">
                     <div class="history-points">
-                      <p><strong>Founded:</strong> 1938 as a grocery store (yes, really!)</p>
-                      <p><strong>First Galaxy Phone:</strong> 2009 (to compete with iPhone)</p>
-                      <p><strong>Today:</strong> Worth $370 billion</p>
-                      <p><strong>Fun Fact:</strong> Makes everything from phones to washing machines to skyscrapers</p>
+                      <p><strong>Founded:</strong> 1938 in South Korea as a trading company exporting fish and groceries</p>
+                      <p><strong>First Galaxy Phone:</strong> June 2009 (Galaxy i7500) to compete with iPhone</p>
+                      <p><strong>Market Value:</strong> <span class="market-value">$370 billion</span></p>
+                      <p><strong>Galaxy Sales:</strong> Over 250 million smartphones sold annually</p>
+                      <p><strong>Fun Fact:</strong> Samsung makes components used in iPhones, including screens and chips, while competing with Apple in phones</p>
                     </div>
                   </div>
                 </div>
@@ -157,7 +232,328 @@
             </div>
           </div>
 
-          <!-- Rest of your content remains exactly the same for specs, returns, pick tabs -->
+          <div class="tab-content" id="specs">
+            <div class="grid-cols-2 gap-6">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    <i class="fab fa-apple"></i>
+                    iPhone 15 Pro Full Specs
+                  </h2>
+                </div>
+                <div class="card-content">
+                  <div class="specs-container">
+                    <div class="spec-group">
+                      <h3 class="spec-title">Display</h3>
+                      <ul class="spec-list">
+                        <li>6.1-inch Super Retina XDR OLED</li>
+                        <li>2556 x 1179 resolution</li>
+                        <li>ProMotion 120Hz refresh rate</li>
+                        <li>Always-On display</li>
+                        <li>2,000 nits peak brightness</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Performance</h3>
+                      <ul class="spec-list">
+                        <li>A17 Pro chip (3nm process)</li>
+                        <li>6-core CPU, 6-core GPU</li>
+                        <li>16-core Neural Engine</li>
+                        <li>8GB RAM</li>
+                        <li>USB-C port (USB 3.0 speeds)</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Camera System</h3>
+                      <ul class="spec-list">
+                        <li>48MP main camera (f/1.78)</li>
+                        <li>12MP ultrawide (f/2.2)</li>
+                        <li>12MP telephoto (3x optical zoom)</li>
+                        <li>4K Dolby Vision video</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Design & Build</h3>
+                      <ul class="spec-list">
+                        <li>Titanium frame</li>
+                        <li>Ceramic Shield front</li>
+                        <li>IP68 water resistance</li>
+                        <li>Action Button</li>
+                        <li>Weight: 187g</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    <i class="fab fa-samsung"></i>
+                    Samsung S24 Ultra Full Specs
+                  </h2>
+                </div>
+                <div class="card-content">
+                  <div class="specs-container">
+                    <div class="spec-group">
+                      <h3 class="spec-title">Display</h3>
+                      <ul class="spec-list">
+                        <li>6.8-inch Dynamic AMOLED 2X</li>
+                        <li>3120 x 1440 resolution</li>
+                        <li>1-120Hz adaptive refresh</li>
+                        <li>Vision booster tech</li>
+                        <li>2,600 nits peak brightness</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Performance</h3>
+                      <ul class="spec-list">
+                        <li>Snapdragon 8 Gen 3</li>
+                        <li>4nm process technology</li>
+                        <li>12GB RAM</li>
+                        <li>256GB to 1TB storage</li>
+                        <li>Ray tracing for gaming</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Camera System</h3>
+                      <ul class="spec-list">
+                        <li>200MP wide camera (f/1.7)</li>
+                        <li>12MP ultrawide (f/2.2)</li>
+                        <li>10MP telephoto (3x zoom)</li>
+                        <li>50MP telephoto (5x zoom)</li>
+                        <li>8K video recording</li>
+                      </ul>
+                    </div>
+
+                    <div class="spec-group">
+                      <h3 class="spec-title">Design & Build</h3>
+                      <ul class="spec-list">
+                        <li>Titanium frame</li>
+                        <li>Armor Aluminum back</li>
+                        <li>IP68 water resistance</li>
+                        <li>Integrated S Pen</li>
+                        <li>Weight: 232g</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="returns">
+            <div class="grid-cols-2 gap-6">
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Apple Refund Process</h2>
+                </div>
+                <div class="card-content">
+                  <div class="enhanced-flowchart">
+                    <div class="flowchart-container">
+                      <div class="flowchart-box start">
+                        <h4>Start Return Process</h4>
+                        <p class="flowchart-detail">
+                          Apple gives you 14 days to return if you're not happy.
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Check purchase date</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Within 14 days of purchase?</h4>
+                        <p class="flowchart-detail">
+                          • Strict 14-day window<br>
+                          • For online orders, starts when delivered<br>
+                          • No exceptions to this timeframe<br>
+                          • Shorter than Samsung's return period
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Yes</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Visit Apple Store or Website</h4>
+                        <p class="flowchart-detail">
+                          • Go to any Apple Store with your iPhone and receipt<br>
+                          • Or start return online at apple.com/orders<br>
+                          • Easier if you live near an Apple Store
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Initiate return</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Is it in perfect condition?</h4>
+                        <p class="flowchart-detail">
+                          • No scratches, dents, or damage<br>
+                          • Must have original box and accessories<br>
+                          • Include charger cable and docs<br>
+                          • Very strict about condition
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Yes</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Show Proof of Purchase</h4>
+                        <p class="flowchart-detail">
+                          • Original receipt<br>
+                          • Order confirmation email<br>
+                          • Apple Store order number
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Approved</div>
+                      <div class="flowchart-box end detailed">
+                        <h4>Get Your Refund</h4>
+                        <p class="flowchart-detail">
+                          • Credit cards: 3-5 business days<br>
+                          • Debit cards: 5-7 business days<br>
+                          • In-store: Immediate refund<br>
+                          • Goes back to original payment
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-3 border rounded-lg bg-slate-50 mt-4">
+                      <h4 class="text-lg font-semibold mb-2">Apple Return Summary</h4>
+                      <p class="text-muted-foreground text-sm mb-2">
+                        Apple's return is quick but strict. Only 14 days and must be perfect. Good if you live near a store.
+                      </p>
+                      <p class="text-muted-foreground text-sm">
+                        <strong>Why this matters:</strong> If you're not sure about keeping the iPhone, you need to decide fast. The condition rules mean you should use a case during the trial period.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h2 class="card-title">Samsung Refund Process</h2>
+                </div>
+                <div class="card-content">
+                  <div class="enhanced-flowchart">
+                    <div class="flowchart-container">
+                      <div class="flowchart-box start">
+                        <h4>Start Return Process</h4>
+                        <p class="flowchart-detail">
+                          Samsung gives you more time to decide if you want to keep the phone.
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Check eligibility</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Within 30 days of delivery?</h4>
+                        <p class="flowchart-detail">
+                          • 30-day return window<br>
+                          • Twice as long as Apple<br>
+                          • Starts when you get the phone<br>
+                          • More time to test it out
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Yes</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Go to Samsung.com/Returns</h4>
+                        <p class="flowchart-detail">
+                          • Sign in to your Samsung account<br>
+                          • Find your order in history<br>
+                          • Click "Return items"<br>
+                          • Mostly online process
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Fill form</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Prepare Device & Packaging</h4>
+                        <p class="flowchart-detail">
+                          • Factory reset the phone<br>
+                          • Remove all your stuff<br>
+                          • Original box and everything that came with it<br>
+                          • Even free gifts must be returned
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Yes</div>
+                      <div class="flowchart-box detailed">
+                        <h4>Print Return Label</h4>
+                        <p class="flowchart-detail">
+                          • Free return shipping<br>
+                          • Drop off at UPS/FedEx<br>
+                          • Keep your tracking number!<br>
+                          • No in-store returns
+                        </p>
+                      </div>
+                      <div class="flowchart-arrow">↓ Ship item back</div>
+                      <div class="flowchart-box end detailed">
+                        <h4>Get Your Refund</h4>
+                        <p class="flowchart-detail">
+                          • Credit card refunds: 7-10 business days<br>
+                          • Back to original payment method<br>
+                          • Shipping costs refunded too<br>
+                          • Takes longer than Apple
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-3 border rounded-lg bg-slate-50 mt-4">
+                      <h4 class="text-lg font-semibold mb-2">Samsung Return Summary</h4>
+                      <p class="text-muted-foreground text-sm mb-2">
+                        Samsung gives you more time (30 days) but you have to mail it back and wait longer for your money.
+                      </p>
+                      <p class="text-muted-foreground text-sm">
+                        <strong>Why this matters:</strong> More time to test the phone, but returning is more work. Keep all packaging during the trial period.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="pick">
+            <div class="simple-recommendation">
+              <h2>Which Phone Should You Get?</h2>
+              
+              <div class="who-should-buy">
+                <div class="buyer-card">
+                  <h3>Get the iPhone 15 Pro if:</h3>
+                  <ul>
+                    <li>• You already have other Apple stuff (Mac, iPad, AirPods)</li>
+                    <li>• You want something simple that just works</li>
+                    <li>• You care about resale value</li>
+                    <li>• Most of your friends have iPhones (iMessage!)</li>
+                    <li>• You prefer iOS over Android</li>
+                  </ul>
+                </div>
+                
+                <div class="buyer-card">
+                  <h3>Get the Samsung S24 Ultra if:</h3>
+                  <ul>
+                    <li>• You want the biggest, most powerful Android phone</li>
+                    <li>• You like to customize your phone's look</li>
+                    <li>• You'll actually use the S Pen for notes/drawing</li>
+                    <li>• You prefer Android's flexibility</li>
+                    <li>• You want the best camera specs on paper</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="final-verdict">
+                <h3>Our Recommendation:</h3>
+                <p>The iPhone 15 Pro is better for most people because:</p>
+                <ol>
+                  <li>1. It's $300 cheaper than the S24 Ultra</li>
+                  <li>2. Works perfectly with other Apple products</li>
+                  <li>3. Gets updates for 5+ years (Samsung gets about 4)</li>
+                  <li>4. Easier to get help at Apple Stores</li>
+                  <li>5. Holds its value better if you sell it later</li>
+                </ol>
+                
+                <div class="bg-background p-4 rounded-lg border mt-4">
+                  <p class="font-medium mb-2">But consider the S24 Ultra if:</p>
+                  <ul class="space-y-1 text-muted-foreground">
+                    <li>• You really want that huge screen and S Pen</li>
+                    <li>• You prefer Android's customization options</li>
+                    <li>• You take lots of photos and want 200MP</li>
+                    <li>• You don't mind the bigger size and weight</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="tab-content" id="references">
             <div class="card">
